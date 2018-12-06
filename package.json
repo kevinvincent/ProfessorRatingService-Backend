@@ -1,0 +1,22 @@
+{
+  "name": "chs",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "main.js",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js",
+    "start": "node main.js"
+  },
+  "author": [
+    "Johnathan Nicholson",
+    "Clinton Staley"
+  ]
+}

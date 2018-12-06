@@ -1,0 +1,20 @@
+<h2>Conversations</h2>
+<div class="list-group">
+   <div class="list-group-item" ng-repeat="cnv in cnvs">
+      <cnv-summary to-summarize="cnv"></cnv-summary>
+      <!--<a  href="#" ui-sref="cnvDetail({cnvId:{{cnv.id}}})">
+       {{cnv.title}} {{cnv.lastMessage | date : 'medium'}}</a>-->
+      <button type="button" class="btn btn-default pull-right"
+       ng-show="user && user.id == cnv.ownerId" ng-click="delCnv($index)">
+         <span class="glyphicon glyphicon-trash"></span>
+      </button>
+      <button type="button" class="btn btn-default btn-sm pull-right"
+       ng-show="user && user.id == cnv.ownerId" ng-click="editCnv($index)">
+         <span class="glyphicon glyphicon-edit"></span>
+      </button>
+   </div>
+</div>
+
+<button class="btn btn-primary" type="button" style="margin-top:5px">
+   New Conversation
+</button>

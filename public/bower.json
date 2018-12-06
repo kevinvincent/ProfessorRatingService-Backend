@@ -1,0 +1,39 @@
+{
+  "name": "IHS Angular Dependencies",
+  "homepage": "https:softwareinventions.com/IHS",
+  "authors": [
+    "JasperAD <jasperakahn@gmail.com>"
+  ],
+  "description": "Dependencies for AngularJS UI for IHS",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.0",
+    "angular-bootstrap": "^1.1.2",
+    "angular-mocks": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "angular-toastr": "^1.7.0",
+    "angular": "^1.5.0",
+    "angular-ui-router": "ui-route#^0.2.18",
+    "bootstrap": "^3.3.6",
+    "angular-translate": "^2.10.0",
+    "angular-translate-loader-static-files": "^2.10.0",
+    "angular-translate-storage-local": "^2.10.0",
+    "angular-translate-handler-log": "^2.10.0",
+    "angular-dynamic-locale": "^0.1.30",
+    "angular-i18n": "^1.5.0",
+    "angular-messages": "^1.5.0",
+    "ngstorage": "^0.3.10",
+    "angular-marked": "^1.2.1",
+    "angular-ui-codemirror": "^0.3.0"
+  }
+}

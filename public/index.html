@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHS</title>
+</head>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+
+<script src="chsapp.js"></script>
+<link rel="stylesheet" href="chsapp.css"></script>
+
+<script src="Home/homeController.js"></script>
+<script src="Register/registerController.js"></script>
+<script src="Login/loginController.js"></script>
+<script src="Login/loginService.js"></script>
+<script src="Conversation/cnvOverviewController.js"></script>
+<script src="ui-routes.js"></script>
+
+<body ng-app="mainApp">
+   <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav">
+         <li ng-if="!user">
+            <a ui-sref="login">Login</a>
+         </li>
+         <li ng-if="!user">
+            <a ui-sref="register">Register</a>
+         </li>
+         <li ng-if="!!user">
+            <a ui-sref="cnvOverview">All Conversations</a>
+         </li>
+      </ul>
+      <ul ng-if="!!user" class="nav navbar pull-right">
+         <li>{{user.firstName + " " + user.lastName}}</li>
+      </ul>
+   </nav>
+   <ui-view/>
+</body>
+</html>

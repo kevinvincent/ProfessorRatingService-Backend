@@ -1,0 +1,16 @@
+<div class="modal-header">
+   <h3 class="modal-title">{{dlgTitle}}</h3>
+</div>
+<div class = "modal-body">
+   <form>
+      <fieldset class="form-group">
+         <label>Conversation Title</label>
+         <input type="text" class="form-control" placeholder="Title" ng-model="title">
+      </fieldset>
+   </form>
+</div>
+<div class="modal-footer">
+   <button type="button" class="btn btn-primary" ng-disabled="!title"
+    ng-click="$close(title)">OK</button>
+   <button type="button" class="btn btn-warning" ng-click="$dismiss()">Cancel</button>
+</div>

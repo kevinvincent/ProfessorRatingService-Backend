@@ -1,0 +1,20 @@
+Items to Check
+
+If your Postman testing fails, here are the routine checks to make:
+
+Postman:
+
+1. Are you using the right environment, so you're addressing the right host?
+2. Are you using the right HTTP verb?
+3. Is the URL correct?
+
+Webserver:
+0. Is it running?
+1. On the right port?
+1. Are you getting debug output indicating a successful transmission of a request from Postman?
+
+Database:
+0. Is mysql server running locally?  (Can you address it via MySQL client?)
+1. Is connection.json correctly configured?  (Can you log into the local server using precisely the credentials and database indicated in connection.json?)
+2. Are the table contents correct, in particular is the admin user available to register as?
+

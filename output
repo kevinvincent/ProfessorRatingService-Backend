@@ -1,0 +1,1813 @@
+[33m[nodemon] 1.14.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node main.js -p 3437`[39m
+App Listening on port 3437
+/Ssns
+Getting connection
+Connection acquired
+/DB
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/21f3ab80df951a807dda6b4c771a4fe5
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Ssns/c8fd6681ec7f86f26660a7391355a5eb
+Getting connection
+Connection acquired
+LOGOUT
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select * from Person where email = 'UserA@domainA'
+[]
+insert into Person SET `email` = 'UserA@domainA', `firstName` = 'FirstA', `lastName` = 'LastA', `password` = 'passwordA', `role` = 0, `termsAccepted` = '2018-03-07 20:08:06.230', `whenRegistered` = '2018-03-07 20:08:06.228'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 2,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Prss
+Getting connection
+Connection acquired
+select * from Person where email = 'UserA@domainA'
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstA',
+    lastName: 'LastA',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+/Prss
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'UserA@domainA' OR email LIKE 'UserA@domainA@%'
+[ RowDataPacket { id: 2, email: 'UserA@domainA' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+undefined
+/DB
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'UserA@domainA' OR email LIKE 'UserA@domainA@%'
+[ RowDataPacket { id: 2, email: 'UserA@domainA' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select * from Person where email = 'UserB@domainB'
+[]
+insert into Person SET `email` = 'UserB@domainB', `firstName` = 'FirstB', `lastName` = 'LastB', `password` = 'passwordB', `role` = 0, `termsAccepted` = '2018-03-07 20:08:06.587', `whenRegistered` = '2018-03-07 20:08:06.585'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 3,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Ssns/fa1334ea8d7498014b3bbcb17ee58c4d
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'UserA@domainA' OR email LIKE 'UserA@domainA@%'
+[ RowDataPacket { id: 2, email: 'UserA@domainA' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'UserA' OR email LIKE 'UserA@%'
+[ RowDataPacket { id: 2, email: 'UserA@domainA' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+select * from Person where email = 'UserC@domainC'
+[]
+insert into Person SET `email` = 'UserC@domainC', `firstName` = 'FirstC', `lastName` = 'LastC', `role` = 0, `termsAccepted` = '1969-12-31 16:00:00.000', `password` = '*', `whenRegistered` = '2018-03-07 20:08:06.746'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 4,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Prss
+Getting connection
+Connection acquired
+select * from Person where email = 'UserD@domainD'
+[]
+insert into Person SET `email` = 'UserD@domainD', `firstName` = 'FirstD', `lastName` = 'LastD', `password` = 'passwordD', `role` = 1, `termsAccepted` = '2018-03-07 20:08:06.790', `whenRegistered` = '2018-03-07 20:08:06.790'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 5,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Prss
+Getting connection
+Connection acquired
+/Ssns/a1b26d338aa3d43b13e29b6ca1d3ea95
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/93dfbe7d8baa5dda4deec489fdc712e8
+Getting connection
+Connection acquired
+LOGOUT
+/Prss
+/Ssns
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'UserA@domainA' OR email LIKE 'UserA@domainA@%'
+[ RowDataPacket { id: 2, email: 'UserA@domainA' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+undefined
+/Ssns/9147bbeb9ef382934bf8951f9678f9ce
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'adm' OR email LIKE 'adm@%'
+[ RowDataPacket { id: 1, email: 'adm@11.com' } ]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person WHERE email = 'invalid@gmail.com' OR email LIKE 'invalid@gmail.com@%'
+[]
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Prss
+Getting connection
+Connection acquired
+select id, email from Person
+[ FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'id',
+    orgName: 'id',
+    charsetNr: 63,
+    length: 11,
+    type: 3,
+    flags: 16899,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true },
+  FieldPacket {
+    catalog: 'def',
+    db: 'ksvincen',
+    table: 'Person',
+    orgTable: 'person',
+    name: 'email',
+    orgName: 'email',
+    charsetNr: 33,
+    length: 90,
+    type: 253,
+    flags: 20485,
+    decimals: 0,
+    default: undefined,
+    zeroFill: false,
+    protocol41: true } ]
+/Ssns/06b320f1644d587536fa5a5973e20f1e
+Getting connection
+Connection acquired
+LOGOUT
+/Prss
+/Prss/1
+/Ssns
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/10
+Getting connection
+Connection acquired
+/Prss/4
+Getting connection
+Connection acquired
+/Ssns/e9fbb67b92cf4ca82b6298d4e1d75c36
+Getting connection
+Connection acquired
+LOGOUT
+/Prss/1
+/Ssns
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstA',
+    lastName: 'LastA',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstA',
+    lastName: 'LastA',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `firstName` = 'FirstAV1' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV1',
+    lastName: 'LastA',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `lastName` = 'LastAV1' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV1',
+    lastName: 'LastAV1',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `lastName` = 'LastAV2', `firstName` = 'FirstAV2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/4
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Ssns/93c0b7842f866b4f91fa705b0ed432e3
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA2',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+/Ssns/890f53b7d023c83578bec3a02b1532cb
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `role` = 1 where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 1 } ]
+update Person set `role` = 0 where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Ssns/59021f17007b2aa5f29a2794876ff449
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/08565d38ff498a195a9ab1a6832ad657
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA2',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA2',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA2',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA2' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA2',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordA' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/4
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 4
+[ RowDataPacket {
+    id: 4,
+    firstName: 'FirstC',
+    lastName: 'LastC',
+    email: 'UserC@domainC',
+    password: '*',
+    whenRegistered: 2018-03-08T04:08:07.000Z,
+    termsAccepted: 1970-01-01T00:00:00.000Z,
+    role: 0 } ]
+update Person set `password` = 'passwordC' where id = 4
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 2
+[ RowDataPacket {
+    id: 2,
+    firstName: 'FirstAV2',
+    lastName: 'LastAV2',
+    email: 'UserA@domainA',
+    password: 'passwordA',
+    whenRegistered: 2018-03-08T04:08:06.000Z,
+    termsAccepted: 2018-03-08T04:08:06.000Z,
+    role: 0 } ]
+update Person set `firstName` = 'FirstAV1' where id = 2
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+Put start
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/2
+Getting connection
+Connection acquired
+/Prss/4
+Getting connection
+Connection acquired
+Put start
+select * from Person where id = 4
+[ RowDataPacket {
+    id: 4,
+    firstName: 'FirstC',
+    lastName: 'LastC',
+    email: 'UserC@domainC',
+    password: 'passwordC',
+    whenRegistered: 2018-03-08T04:08:07.000Z,
+    termsAccepted: 1970-01-01T00:00:00.000Z,
+    role: 0 } ]
+update Person set `firstName` = 'FirstAV2' where id = 4
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+Put end
+/Prss/4
+Getting connection
+Connection acquired
+/Ssns/1d5543a45c8d97e8278dc750157c58b6
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/0a694fc5d9b464cdb0c27f0deb1cf143
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/9850a9fe4902d0bb47cc726ec8741773
+Getting connection
+Connection acquired
+/Ssns/9850a9fe4902d0bb47cc726ec8741773
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns/%7B%7BcurLogin%7D%7D
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/b576e7dd6a8120647a792ae85ac620b7
+Getting connection
+Connection acquired
+/Ssns/ad10c89482141437b17cdf437696a80e
+Getting connection
+Connection acquired
+/Ssns/49d8869aa1b638fef3cd6a9cc6b4c943
+Getting connection
+Connection acquired
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/b576e7dd6a8120647a792ae85ac620b7
+Getting connection
+Connection acquired
+/Ssns/b576e7dd6a8120647a792ae85ac620b7
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns/49d8869aa1b638fef3cd6a9cc6b4c943
+Getting connection
+Connection acquired
+/Ssns/659cf38b84a2ca11165ec78aa75a9c9a
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns/b576e7dd6a8120647a792ae85ac620b7
+/Ssns
+Getting connection
+Connection acquired
+/Ssns/659cf38b84a2ca11165ec78aa75a9c9a
+Getting connection
+Connection acquired
+/Ssns/cd724003743d44f20ad6d1f389307fd1
+Getting connection
+Connection acquired
+LOGOUT
+/Cnvs/
+/Cnvs
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+select id, title, ownerId, lastMessage from Conversation where ownerId = 3
+[]
+/Cnvs
+Getting connection
+Connection acquired
+select * from Conversation where title = 'Test'
+[]
+insert into Conversation set `title` = 'Test', `ownerId` = 3
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 1,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs
+Getting connection
+Connection acquired
+select * from Conversation where title = 'Test'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+/Cnvs
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+select * from Conversation where title = 'Test2'
+[]
+insert into Conversation set `title` = 'Test2', `ownerId` = 3
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 2,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+select * from Conversation where title = 'Test2' && id != '1'
+[ RowDataPacket { id: 2, ownerId: 3, title: 'Test2', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+select * from Conversation where title = 'TestUpdate' && id != '1'
+[]
+update Conversation set title = 'TestUpdate' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'TestUpdate', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'TestUpdate', lastMessage: null } ]
+select * from Conversation where title = 'Test' && id != '1'
+[]
+update Conversation set title = 'Test' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs
+Getting connection
+Connection acquired
+select id, title, ownerId, lastMessage from Conversation where ownerId = 3
+[ RowDataPacket { id: 1, title: 'Test', ownerId: 3, lastMessage: null },
+  RowDataPacket { id: 2, title: 'Test2', ownerId: 3, lastMessage: null } ]
+/Cnvs
+Getting connection
+Connection acquired
+select id, title, ownerId, lastMessage from Conversation where ownerId = 20
+[]
+/Ssns/13d5c23a8cb0d67247a2cfcc0320a498
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/
+Getting connection
+Connection acquired
+select id, title, ownerId, lastMessage from Conversation
+[ RowDataPacket { id: 1, title: 'Test', ownerId: 3, lastMessage: null },
+  RowDataPacket { id: 2, title: 'Test2', ownerId: 3, lastMessage: null } ]
+/Ssns/e5788c222ad5c7db3d7424115d0516a0
+Getting connection
+Connection acquired
+LOGOUT
+/Cnvs/1
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+select * from Conversation where title = 'Test3'
+[]
+insert into Conversation set `title` = 'Test3', `ownerId` = 4
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 3,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+/Ssns/c4fc20b8a7097388994728c6f2f35e19
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+select * from Conversation where title = 'Test2' && id != '1'
+[ RowDataPacket { id: 2, ownerId: 3, title: 'Test2', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+select * from Conversation where title = 'TestUpdate' && id != '1'
+[]
+update Conversation set title = 'TestUpdate' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'TestUpdate', lastMessage: null } ]
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'TestUpdate', lastMessage: null } ]
+select * from Conversation where title = 'Test' && id != '1'
+[]
+update Conversation set title = 'Test' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Ssns/e4f5141e369b087d8a8317f43f53132c
+Getting connection
+Connection acquired
+LOGOUT
+/Cnvs/1/Msgs
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket { id: 1, ownerId: 3, title: 'Test', lastMessage: null } ]
+insert into Message set `cnvId` = '1', `prsId` = 3, `whenMade` = '2018-03-07 20:08:10.804', `content` = 'Cnv1_Msg1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 1,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:10.804' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+/Cnvs/2/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket { id: 2, ownerId: 3, title: 'Test2', lastMessage: null } ]
+insert into Message set `cnvId` = '2', `prsId` = 3, `whenMade` = '2018-03-07 20:08:10.856', `content` = 'Cnv2_Msg1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 2,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:10.856' where id = '2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+/Cnvs/2
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket {
+    id: 2,
+    ownerId: 3,
+    title: 'Test2',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+/Ssns/789ef25aa02bd4d8417e44f043401b93
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+insert into Message set `cnvId` = '1', `prsId` = 4, `whenMade` = '2018-03-07 20:08:10.976', `content` = 'Cnv1_Msg2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 3,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:10.976' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/2/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket {
+    id: 2,
+    ownerId: 3,
+    title: 'Test2',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+insert into Message set `cnvId` = '2', `prsId` = 4, `whenMade` = '2018-03-07 20:08:11.010', `content` = 'Cnv2_Msg2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 4,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:11.010' where id = '2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+/Ssns/3275d33d597861a92ea37b54e0a7824b
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+insert into Message set `cnvId` = '1', `prsId` = 1, `whenMade` = '2018-03-07 20:08:11.076', `content` = 'Cnv1_Msg3'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 5,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:11.076' where id = '1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/2/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket {
+    id: 2,
+    ownerId: 3,
+    title: 'Test2',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+insert into Message set `cnvId` = '2', `prsId` = 1, `whenMade` = '2018-03-07 20:08:11.101', `content` = 'Cnv2_Msg3'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 6,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:11.101' where id = '2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0 }
+/Ssns/8fed9e9adc5e57f53916ad5c0562951f
+Getting connection
+Connection acquired
+LOGOUT
+/Cnvs/1/Msgs
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+select whenMade, email, content from Conversation c join Message on cnvId = c.id join Person p on prsId = p.id where c.id = '1' order by whenMade asc, Message.id asc
+[ RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserB@domainB',
+    content: 'Cnv1_Msg1' },
+  RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserC@domainC',
+    content: 'Cnv1_Msg2' },
+  RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'adm@11.com',
+    content: 'Cnv1_Msg3' } ]
+/Cnvs/2/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket {
+    id: 2,
+    ownerId: 3,
+    title: 'Test2',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+select whenMade, email, content from Conversation c join Message on cnvId = c.id join Person p on prsId = p.id where c.id = '2' order by whenMade asc, Message.id asc
+[ RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserB@domainB',
+    content: 'Cnv2_Msg1' },
+  RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserC@domainC',
+    content: 'Cnv2_Msg2' },
+  RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'adm@11.com',
+    content: 'Cnv2_Msg3' } ]
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+select whenMade, email, content from Conversation c join Message on cnvId = c.id join Person p on prsId = p.id where c.id = '1' order by whenMade asc, Message.id asc limit 2
+[ RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserB@domainB',
+    content: 'Cnv1_Msg1' },
+  RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserC@domainC',
+    content: 'Cnv1_Msg2' } ]
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[ RowDataPacket {
+    id: 1,
+    ownerId: 3,
+    title: 'Test',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+select whenMade, email, content from Conversation c join Message on cnvId = c.id join Person p on prsId = p.id where c.id = '1' and whenMade <= '0999-12-31 16:00:00.000' order by whenMade asc, Message.id asc limit 2
+[]
+/Ssns/c45d3cffad8a749248042a3fbf9dd4a2
+Getting connection
+Connection acquired
+LOGOUT
+/Msgs/1
+/Ssns
+Getting connection
+Connection acquired
+/Msgs/1
+Getting connection
+Connection acquired
+select whenMade, email, content from Conversation c join Message m on cnvId = c.id join Person p on prsId = p.id where m.id = 1
+[ RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserB@domainB',
+    content: 'Cnv1_Msg1' } ]
+/Msgs/4
+Getting connection
+Connection acquired
+select whenMade, email, content from Conversation c join Message m on cnvId = c.id join Person p on prsId = p.id where m.id = 4
+[ RowDataPacket {
+    whenMade: 2018-03-08T04:08:11.000Z,
+    email: 'UserC@domainC',
+    content: 'Cnv2_Msg2' } ]
+/Ssns/66aeaa286c799d24ec0d902f0ebf96e7
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs
+Getting connection
+Connection acquired
+select * from Conversation where title = 'ToDelete'
+[]
+insert into Conversation set `title` = 'ToDelete', `ownerId` = 1
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 4,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/4/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '4'
+[ RowDataPacket { id: 4, ownerId: 1, title: 'ToDelete', lastMessage: null } ]
+insert into Message set `cnvId` = '4', `prsId` = 1, `whenMade` = '2018-03-07 20:08:11.503', `content` = 'Cnv4_Msg1'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 7,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+update Conversation set lastMessage = '2018-03-07 20:08:11.503' where id = '4'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+/Cnvs/3
+Getting connection
+Connection acquired
+select * from Conversation where id = '3'
+[ RowDataPacket { id: 3, ownerId: 4, title: 'Test3', lastMessage: null } ]
+delete from Conversation where id = '3'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/4
+Getting connection
+Connection acquired
+select * from Conversation where id = '4'
+[ RowDataPacket {
+    id: 4,
+    ownerId: 1,
+    title: 'ToDelete',
+    lastMessage: 2018-03-08T04:08:12.000Z } ]
+delete from Conversation where id = '4'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/3
+Getting connection
+Connection acquired
+select * from Conversation where id = '3'
+[]
+/Cnvs/4
+Getting connection
+Connection acquired
+select * from Conversation where id = '4'
+[]
+/Cnvs/4/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '4'
+[]
+/Msgs/7
+Getting connection
+Connection acquired
+select whenMade, email, content from Conversation c join Message m on cnvId = c.id join Person p on prsId = p.id where m.id = 7
+[]
+/Ssns/456cd27687cfab636df03f9989c93856
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Cnvs/2
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[ RowDataPacket {
+    id: 2,
+    ownerId: 3,
+    title: 'Test2',
+    lastMessage: 2018-03-08T04:08:11.000Z } ]
+delete from Conversation where id = '2'
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+/Cnvs/2
+Getting connection
+Connection acquired
+select * from Conversation where id = '2'
+[]
+/Ssns/08a335ad802aa1974607b81803e8bbf7
+Getting connection
+Connection acquired
+LOGOUT
+/Prss/3
+/Ssns
+Getting connection
+Connection acquired
+/Prss/3
+Getting connection
+Connection acquired
+/Ssns/9ffa249c7f9f7fc86863a876ae167aba
+Getting connection
+Connection acquired
+LOGOUT
+/Ssns
+Getting connection
+Connection acquired
+/Prss/3
+Getting connection
+Connection acquired
+/Prss/3
+Getting connection
+Connection acquired
+/Prss/3
+Getting connection
+Connection acquired
+/Cnvs/1
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[]
+/Cnvs/1/Msgs
+Getting connection
+Connection acquired
+select * from Conversation where id = '1'
+[]
+/Msg/1
+Getting connection
+Connection acquired
